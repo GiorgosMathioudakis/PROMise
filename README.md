@@ -51,5 +51,5 @@ A full-stack web application designed for **healthcare professionals** to create
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/medical-questionnaire-system.git
-cd medical-questionnaire-system
+git clone [https://github.com/your-username/medical-questionnaire-system.git](https://github.com/GiorgosMathioudakis/PROMise.git)
+cd PROMise
