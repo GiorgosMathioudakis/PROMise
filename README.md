@@ -50,6 +50,32 @@ A full-stack web application designed for **healthcare professionals** to create
 
 ### 1. Clone the Repository
 
-```bash
 git clone [https://github.com/your-username/medical-questionnaire-system.git](https://github.com/GiorgosMathioudakis/PROMise.git)
 cd PROMise
+
+
+### 2. Backend Setup (Spring Boot)
+
+cd backend
+
+Configure your PostgreSQL connection in src/main/resources/application.properties:
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/questionnaire_db
+spring.datasource.username=postgres
+spring.datasource.password=--------
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+
+### Run the Spring Boot app:
+
+./mvnw spring-boot:run
+
+
+### 3. Frontend Setup (React)
+
+cd frontend
+npm install
+npm run dev
+
